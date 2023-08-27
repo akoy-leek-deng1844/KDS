@@ -1,0 +1,145 @@
+
+form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    padding: 1rem;
+    width: 90vw;
+    max-width: 400px;
+    margin: auto;
+}
+form input {
+    padding: 1rem;
+    border: transparent;
+    background: var(--primary-100);
+    font-size: 1.2rem;
+}
+form label{
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+form textarea{
+    padding: 0.5rem;
+    font-family: sans-serif;
+   font-size: 1.2rem;
+   border: 4px solid var(--primary-100); 
+   resize: none;
+   line-height: 1.2;
+}
+
+/* contact desc */
+.contact-desc{
+    padding: 1rem 2rem;
+    line-height: 1.4;
+    /* margin: 1.5rem; */
+    display: grid;
+    place-content: center;
+    height: 50vh;
+    background: var(--primary-100);
+}
+.contact-desc h4{
+   margin-bottom: 2rem;
+   text-align: center;
+   font-weight: bold;
+}
+
+.contact-info{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    margin: 2rem 0 4rem;
+    gap: 2rem;
+    justify-content: center;
+}
+.card{
+    background: var(--grey-100);
+    width: 90vw;
+    max-width: 400px;
+    margin: auto;
+    height: 38rem;
+    box-shadow: var(--shadow-1);
+}
+.card-child{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2rem;
+    align-items: center;
+    padding: 1rem;
+}
+.card-child span{
+    background: blue;
+    font-size: 1.7rem;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    padding: 1rem;
+    display: grid;
+    place-content: center;
+   color: var(--white);
+}
+.card-child svg{
+    animation: call 2s linear infinite;
+}
+.call-info{
+    line-height: 1.4;
+    font-weight: 600;
+}
+.call-info h4{
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+@keyframes call {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+   100%{
+      transform: scale(1);
+   }
+}
+
+/* whatsapp */
+.social{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+.whatsapp{
+    display: flex;
+    column-gap: 0.5rem;
+    align-items: center;
+}
+.social .social-icons{
+    font-size: 1.5rem;
+    display: flex;
+    column-gap: 0.5rem;
+}
+.social img{
+    width: 11rem;
+}
+.social div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+}
+.whatsappLink svg{
+    color: green;
+    font-size: 4rem;
+}
+.shortCard{
+    height: 15rem;
+}
+@media screen and (min-width:1400px) {
+    .shortCard{
+        height: 31rem;
+        background: none;
+        box-shadow: none;
+    }
+    .social{
+        align-items: start;
+    }
+}
+
+
